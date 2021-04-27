@@ -4,6 +4,7 @@ const tempFile = require("temp-write");
 const createTempFile = async (content) => {
   return await tempFile(content, "temp.m");
 };
+
 /**
  * Runs MATLAB script and gives output
  *
