@@ -1,16 +1,40 @@
 {
   "name": "node-matlab",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Run MATLAB commands/files from NodeJS",
+  "homepage": "https://github.com/zeybek/node-matlab#README",
+  "bugs": {
+    "url": "https://github.com/zeybek/node-matlab/issues",
+    "email": "me@zeybek.dev"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "matlab",
+    "matrix",
+    "data",
+    "analytic",
+    "signal",
+    "processing",
+    "algebra"
+  ],
+  "author": "Ahmet Zeybek <me@zeybek.dev> (https://zeybek.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeybek/node-matlab.git"
+  },
   "dependencies": {
     "fs-extra": "^9.1.0",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.4",
+    "temp-write": "^4.0.0",
+    "tmp": "^0.2.1"
   }
 }
