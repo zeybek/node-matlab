@@ -26,10 +26,4 @@ const run = async (script) => {
   });
 };
 
-run("3+4")
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+module.exports = { run };
