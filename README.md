@@ -8,6 +8,10 @@
 $ npm install node-matlab
 ```
 
+## Requirements
+
+MATLAB 2019a or later must be installed on your pc, you don't need to install Python/Jupyter Notebook or MATLAB kernel
+
 ## Usage
 
 ```js

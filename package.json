@@ -1,6 +1,6 @@
 {
   "name": "node-matlab",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Run MATLAB commands/files from NodeJS",
   "homepage": "https://github.com/zeybek/node-matlab#README",
   "bugs": {
