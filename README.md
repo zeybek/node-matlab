@@ -24,3 +24,52 @@ matlab
 
 // ans = 7
 ```
+
+You need to escape "\n", "\r" etc. to run multiline scripts
+
+```js
+const matlab = require("node-matlab");
+
+matlab
+  .run(
+    `clc;
+clear;
+counter = 0;
+
+period = 0.1;
+totalTime = 2;
+
+for number = 0:period:totalTime
+  counter = counter + 1;
+  array(counter) = -2 * cos(2 * pi * 2 * number + deg2rad(47));
+  fprintf("t(%g) = %g\\n", number, array(counter));
+end
+  `
+  )
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
+
+/**********************
+t(0) = -1.364
+t(0.1) = 0.969619
+t(0.2) = 1.96325
+t(0.3) = 0.243739
+t(0.4) = -1.81262
+t(0.5) = -1.364
+t(0.6) = 0.969619
+t(0.7) = 1.96325
+t(0.8) = 0.243739
+t(0.9) = -1.81262
+t(1) = -1.364
+t(1.1) = 0.969619
+t(1.2) = 1.96325
+t(1.3) = 0.243739
+t(1.4) = -1.81262
+t(1.5) = -1.364
+t(1.6) = 0.969619
+t(1.7) = 1.96325
+t(1.8) = 0.243739
+t(1.9) = -1.81262
+t(2) = -1.364
+*********************/
+```
