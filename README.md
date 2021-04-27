@@ -1,6 +1,6 @@
 # node-matlab
 
-> Runs MATLAB script and gives output
+Runs MATLAB script and gives output
 
 ## Install
 
