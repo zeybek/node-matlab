@@ -1,8 +1,13 @@
 const { exec } = require("child_process");
 const tempFile = require("temp-write");
+const shell = require("shelljs");
 
 const createTempFile = async (content) => {
   return await tempFile(content, "temp.m");
+};
+
+const hasMATLAB = () => {
+  return !shell.which("matlab");
 };
 
 /**
@@ -40,6 +45,9 @@ const getVersion = () => {
  */
 const run = async (script) => {
   try {
+    if (hasMATLAB()) {
+      return "You must have MATLAB installed";
+    }
     let version = await getVersion();
     if (version) {
       const temporaryFile = await createTempFile(script);
