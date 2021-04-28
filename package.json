@@ -32,9 +32,6 @@
     "url": "https://github.com/zeybek/node-matlab.git"
   },
   "dependencies": {
-    "fs-extra": "^9.1.0",
-    "shelljs": "^0.8.4",
-    "temp-write": "^4.0.0",
-    "tmp": "^0.2.1"
+    "temp-write": "^4.0.0"
   }
 }
