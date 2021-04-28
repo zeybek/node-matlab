@@ -24,8 +24,8 @@ const getVersion = () => {
       version.length -= 1;
       version = parseFloat(version.join("."));
 
-      if (version < 9.2) {
-        reject("You must have installed MATLAB 2017a or later");
+      if (version < 9.6) {
+        reject("You must have installed MATLAB 2019a or later");
       }
 
       resolve(version);
