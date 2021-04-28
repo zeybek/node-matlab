@@ -1,5 +1,11 @@
 # node-matlab
 
+![NPM](https://img.shields.io/npm/l/node-matlab?style=flat-square)
+![npm](https://img.shields.io/npm/v/node-matlab?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/zeybek/node-matlab?style=flat-square)
+![npm](https://img.shields.io/npm/dw/node-matlab?style=flat-square)
+![MATLAB](https://img.shields.io/badge/MATLAB-%3E%3D%202019a-blue?style=flat-square)
+
 Runs MATLAB script and gives output
 
 ## Install
