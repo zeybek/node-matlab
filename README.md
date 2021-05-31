@@ -21,6 +21,7 @@ MATLAB 2019a or later must be installed on your pc, you don't need to install Py
 ## Usage
 
 ```js
+// One Line
 const matlab = require("node-matlab");
 
 matlab
@@ -28,12 +29,13 @@ matlab
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
 
-// ans = 7
+// 7
 ```
 
 You need to escape "\n", "\r" etc. to run multiline scripts
 
 ```js
+// Multi Line
 const matlab = require("node-matlab");
 
 matlab
@@ -78,4 +80,16 @@ t(1.8) = 0.243739
 t(1.9) = -1.81262
 t(2) = -1.364
 *********************/
+```
+
+```js
+// Read From File
+const matlab = require("node-matlab");
+
+matlab
+  .run("file.m")
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
+
+// t + 4*exp(-t) - 3*exp(-2*t) + 1
 ```
