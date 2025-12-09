@@ -72,8 +72,7 @@
     "url": "https://github.com/zeybek/node-matlab.git"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
