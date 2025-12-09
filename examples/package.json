@@ -1,0 +1,26 @@
+{
+  "name": "node-matlab-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Examples for node-matlab package",
+  "type": "module",
+  "scripts": {
+    "example": "tsx",
+    "01:hello": "tsx 01-basic/hello-matlab.ts",
+    "01:script": "tsx 01-basic/run-script.ts",
+    "01:calc": "tsx 01-basic/simple-calculation.ts",
+    "02:get": "tsx 02-variables/get-variables.ts",
+    "02:set": "tsx 02-variables/set-variables.ts",
+    "02:convert": "tsx 02-variables/data-conversion.ts",
+    "03:plot": "tsx 03-figures/save-plot.ts",
+    "03:multi": "tsx 03-figures/multiple-figures.ts",
+    "03:formats": "tsx 03-figures/export-formats.ts"
+  },
+  "dependencies": {
+    "node-matlab": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.0"
+  }
+}
